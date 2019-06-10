@@ -1,0 +1,229 @@
+S. Aguero, ManCity, 89, 1/20
+R. Sterling, ManCity, 87, 2/20
+L. Sane, ManCity, 86, 3/20
+R. Mahrez, ManCity, 85, 4/20
+D. Silva, ManCity, 89, 5/20
+Fernandinho, ManCity, 86, 6/20
+K. De Bruyne, ManCity, 91, 7/20
+K. Walker, ManCity, 84, 8/20
+N. Otamendi, ManCity, 86, 9/20
+V. Kompany, ManCity, 85, 10/20
+Ederson, ManCity, 86, 11/20
+B. Silva, ManCity, 84, 12/20
+I. Gundogan, ManCity, 84, 13/20
+A. Laporte, ManCity, 83, 14/20
+G. Jesus, ManCity, 83, 15/20
+J. Stones, ManCity, 82, 16/20
+B. Mendy, ManCity, 81, 17/20
+F. Delph, ManCity, 80, 18/20
+C. Bravo, ManCity, 79, 19/20
+Danilo, ManCity, 79, 20/20
+
+M. Salah, Liverpool, 88, 1/19
+R. Firmino, Liverpool, 86, 2/19
+S. Mane, Liverpool, 86, 3/19
+X. Shaqiri, Liverpool, 81, 4/19
+D. Sturridge, Liverpool, 80, 5/19
+D. Origi, Liverpool, 77, 6/19
+Fabinho, Liverpool, 85, 7/19
+N. Keita, Liverpool, 83, 8/19
+J. Henderson, Liverpool, 82, 9/19
+G. Wijnaldum, Liverpool, 82, 10/19
+V. van Dijk, Liverpool, 88, 11/19
+A. Robertson, Liverpool, 83, 12/19
+D. Lovren, Liverpool, 81, 13/19
+J. Matip, Liverpool, 81, 14/19
+Alisson, Liverpool, 87, 15/19
+T. Alexander-Arnold, Liverpool, 78, 16/19
+A. Lallana, Liverpool, 81, 17/19
+J. Milner, Liverpool, 81, 18/19
+A. Oxlade-Chamberlain, Liverpool, 80, 19/19
+
+E. Hazard, Chelsea, 91, 1/18
+G. Higuain, Chelsea, 88, 2/18
+Willian, Chelsea, 84, 3/18
+O. Giroud, Chelsea, 82, 4/18
+Pedro, Chelsea, 82, 5/18
+N. Kante, Chelsea, 89, 6/18
+Jorginho, Chelsea, 84, 7/18
+M. Kovacic, Chelsea, 83, 8/18
+R. Barkley, Chelsea, 79, 9/18
+C. Azpilicueta, Chelsea, 86, 10/18
+D. Luiz, Chelsea, 83, 11/18
+M. Alonso, Chelsea, 82, 12/18
+A. Christensen, Chelsea, 82, 13/18
+A. Rudiger, Chelsea, 81, 14/18
+Kepa, Chelsea, 84, 15/18
+V. Moses, Chelsea, 78, 16/18
+C. Hudson-Odoi, Chelsea, 68, 17/18
+R. Loftus-Cheek, Chelsea, 77, 18/18
+
+H. Kane, Tottenham, 90, 1/17
+F. Llorente, Tottenham, 77, 2/17
+C. Eriksen, Tottenham, 88, 3/17
+H. Son, Tottenham, 85, 4/17
+D. Alli, Tottenham, 84, 5/17
+Lucas, Tottenham, 82, 6/17
+V. Wanyama, Tottenham, 80, 7/17
+E. Lamela, Tottenham, 80, 8/17
+E. Dier, Tottenham, 80, 9/17
+T. Alderweireld, Tottenham, 87, 10/17
+J. Vertonghen, Tottenham, 87, 11/17
+D. Sanchez, Tottenham, 84, 12/17
+K. Trippier, Tottenham, 82, 13/17
+B. Davies, Tottenham, 81, 14/17
+S. Aurier, Tottenham, 81, 15/17
+D. Rose, Tottenham, 80, 16/17
+H. Lloris, Tottenham, 88, 17/17
+
+P. Aubameyang, Arsenal, 88, 1/16
+A. Lacazette, Arsenal, 85, 2/16
+M. Ozil, Arsenal, 86, 3/16
+H. Mkhitaryan, Arsenal, 84, 4/16
+L. Torreira, Arsenal, 82, 5/16
+G. Xhaka, Arsenal, 81, 6/16
+D. Suarez, Arsenal, 79, 7/16
+M. Elneny, Arsenal, 78, 8/16
+A. Iwobi, Arsenal, 76, 9/16
+Sokratis, Arsenal, 84, 10/16
+S. Mustafi, Arsenal, 82, 11/16
+L. Koscielny, Arsenal, 82, 12/16
+S. Kolasinac, Arsenal, 80, 13/16
+N. Monreal, Arsenal, 80, 14/16
+H. Bellerin, Arsenal, 80, 15/16
+B. Leno, Arsenal, 84, 16/16
+
+R. Lukaku, ManUnited, 87, 1/15
+A. Sanchez, ManUnited, 87, 2/15
+A. Martial, ManUnited, 84, 3/15
+M. Rashford, ManUnited, 82, 4/15
+P. Pogba, ManUnited, 88, 5/15
+N. Matic, ManUnited, 86, 6/15
+J. Mata, ManUnited, 83, 7/15
+Fred, ManUnited, 82, 8/15
+A. Herrera, ManUnited, 82, 9/15
+J. Lingard, ManUnited, 82, 10/15
+E. Bailly, ManUnited, 82, 11/15
+A. Valencia, ManUnited, 82, 12/15
+C. Smalling, ManUnited, 81, 13/15
+A. Young, ManUnited, 80, 14/15
+D. De Gea, ManUnited, 91, 15/15
+
+D. Jota, Wolves, 78, 1/14
+R. Jimenez, Wolves, 78, 2/14
+H. Costa, Wolves, 75, 3/14
+I. Cavaleiro, Wolves, 75, 4/14
+A. Traore, Wolves, 75, 5/14
+J. Moutinho, Wolves, 81, 6/14
+R. Neves, Wolves, 80, 7/14
+J. Castro, Wolves, 79, 8/14
+M. Doherty, Wolves, 77, 9/14
+W. Boly, Wolves, 76, 10/14
+C. Coady, Wolves, 73, 11/14
+R. Bennett, Wolves, 71, 12/14
+R. Saiss, Wolves, 74, 13/14
+R. Patricio, Wolves, 83, 14/14
+
+Richarlison, Everton, 80, 1/13
+C. Tosun, Everton, 80, 2/13
+D. Calvert-Lewin, Everton, 74, 3/13
+G. Sigurdsson, Everton, 82, 4/13
+I. Gueye, Everton, 82, 5/13
+L. Digne, Everton, 81, 6/13
+S. Coleman, Everton, 80, 7/13
+L. Baines, Everton, 79, 8/13
+M. Keane, Everton, 79, 9/13
+K. Zouma, Everton, 78, 10/13
+Y. Mina, Everton, 78, 11/13
+M. Holgate, Everton, 76, 12/13
+J. Pickford, Everton, 83, 13/13
+
+J. Vardy, Leicester, 82, 1/12
+S. Okazaki, Leicester, 76, 2/12
+K. Iheanacho, Leicester, 75, 3/12
+W. Ndidi, Leicester, 80, 4/12
+Y. Tielemans, Leicester, 79, 5/12
+J. Maddison, Leicester, 77, 6/12
+D. Gray, Leicester, 76, 7/12
+H. Maguire, Leicester, 82, 8/12
+R. Pereira, Leicester, 81, 9/12
+J. Evans, Leicester, 78, 10/12
+B. Chilwell, Leicester, 76, 11/12
+K. Schmeichel, Leicester, 84, 12/12
+
+M. Arnautovic, West Ham, 82, 1/11
+J. Hernandez, West Ham, 79, 2/11
+M. Antonio, West Ham, 78, 3/11
+F. Anderson, West Ham, 84, 4/11
+M. Lanzini, West Ham, 81, 5/11
+A. Yarmolenko, West Ham, 80, 6/11
+F. Balbuena, West Ham, 80, 7/11
+A. Ogbonna, West Ham, 78, 8/11
+P. Zabaleta, West Ham, 76, 9/11
+A. Masuaku, West Ham, 76, 10/11
+L. Fabianski, West Ham, 80, 11/11
+
+T. Deeney, Watford, 77, 1/10
+A. Gray, Watford, 75, 2/10
+G. Deulofeu, Watford, 81, 3/10
+A. Doucoure, Watford, 81, 4/10
+R. Pereyra, Watford, 79, 5/10
+E. Capoue, Watford, 77, 6/10
+C. Kabasele, Watford, 78, 7/10
+J. Holebas, Watford, 77, 8/10
+D. Janmaat, Watford, 77, 9/10
+B. Foster, Watford, 77, 10/10
+
+W. Zaha, Crystal Palace, 82, 1/9
+M. Batshuayi, Crystal Palace, 81, 2/9
+L. Milivojevic, Crystal Palace, 79, 3/9
+A. Townsend, Crystal Palace, 78, 4/9
+J. Tomkins, Crystal Palace, 78, 5/9
+A. Wan-Bissaka, Crystal Palace, 76, 6/9
+P. van Aanholt, Crystal Palace, 75, 7/9
+C. Benteke, Crystal Palace, 78, 8/9
+V. Guaita, Crystal Palace, 81, 9/9
+
+S. Rondon, Newcastle, 77, 1/8
+A. Perez, Newcastle, 76, 2/8
+M. Almiron, Newcastle, 80, 3/8
+C. Atsu, Newcastle, 75, 4/8
+F. Lejeune, Newcastle, 78, 5/8
+J. Lascelles, Newcastle, 78, 6/8
+D. Yedlin, Newcastle, 76, 7/8
+M. Dubravka, Newcastle, 77, 8/8
+
+C. Wilson, Bournemouth, 78, 1/7
+J. King, Bournemouth, 78, 2/7
+J. Lerma, Bournemouth, 79, 3/7
+R. Fraser, Bournemouth, 77, 4/7
+N. Clyne, Bournemouth, 80, 5/7
+N. Ake, Bournemouth, 79, 6/7
+A. Begovic, Bournemouth, 79, 7/7
+
+C. Wood, Burnley, 78, 1/6
+J. Gudmundsson, Burnley, 79, 2/6
+J. Tarkowski, Burnley, 80, 3/6
+B. Mee, Burnley, 80, 4/6
+A. Barnes, Burnley, 77, 5/6
+T. Heaton, Burnley, 80, 6/6
+
+D. Ings, Southampton, 76, 1/5
+S. Long, Southampton, 74, 2/5
+J. Ward-Prowse, Southampton, 77, 3/5
+R. Bertrand, Southampton, 79, 4/5
+A. McCarthy, Southampton, 77, 5/5
+
+G. Murray, Brighton, 76, 1/4
+P. Gross, Brighton, 78, 2/4
+L. Dunk, Brighton, 77, 3/4
+M. Ryan, Brighton, 78, 4/4
+
+V. Camarasa, Cardiff, 76, 1/3
+S. Bamba, Cardiff, 75, 2/3
+N. Etheridge, Cardiff, 72, 3/3
+
+A. Mitrovic, Fulham, 76, 1/2
+R. Sessegnon, Fulham, 75, 2/2
+
+A. Mooy, Huddersfield, 79, 1/1
