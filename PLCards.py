@@ -56,8 +56,8 @@ class Game:
             i1 -= 1
 
         firstp.setPlayingCard(firstp.deck[i1])
-        print(firstp.name + " played: " + " %-20s %-20s %-13s %-15s" % (firstp.deck[i1].name, "Team: " + firstp.deck[i1].team, "Rating: " + str(firstp.deck[i1].rating), "Rarity: " + firstp.deck[i1].availability))
         firstp.setCard(i1, self.deck.pop(0))
+        print(firstp.name + " played: " + " %-22s %-20s %-13s %-15s" % (firstp.playingCard[0].name, "Team: " + firstp.playingCard[0].team, "Rating: " + str(firstp.playingCard[0].rating), "Rarity: " + firstp.playingCard[0].availability))
 
 
         i2 = -1
@@ -69,8 +69,8 @@ class Game:
             i2 -= 1
     
         secondp.setPlayingCard(secondp.deck[i2])
-        print(secondp.name + " played: " + " %-20s %-20s %-13s %-15s" % (secondp.deck[i2].name, "Team: " + secondp.deck[i2].team, "Rating: " + str(secondp.deck[i2].rating), "Rarity: " + secondp.deck[i2].availability))
         secondp.setCard(i2, self.deck.pop(0))
+        print(secondp.name + " played: " + " %-22s %-20s %-13s %-15s" % (secondp.playingCard[0].name, "Team: " + secondp.playingCard[0].team, "Rating: " + str(secondp.playingCard[0].rating), "Rarity: " + secondp.playingCard[0].availability))
 
 
         self.war(firstp, secondp, i1, i2)
@@ -83,6 +83,96 @@ class Game:
 
     def penalties(self, p1, p2):
         print("Penalties!")
+        p1score = 0
+        p2score = 0
+
+        # If doubled down
+        if len(p1.playingCard) == 2:
+            p1.playingCard.append(self.deck.pop(0))
+            p1score += p1.playingCard[2].rating
+            print(p1.name + " got: " + " %-22s %-20s %-13s" % (p1.playingCard[2].name, "Rating: " + str(p1.playingCard[2].rating), "Score: " + str(p1score)))
+            p2.playingCard.append(self.deck.pop(0))
+            p2score += p2.playingCard[2].rating
+            print(p2.name + " got: " + " %-22s %-20s %-13s" % (p2.playingCard[2].name, "Rating: " + str(p2.playingCard[2].rating), "Score: " + str(p2score)))
+            p1.playingCard.append(self.deck.pop(0))
+            p1score += p1.playingCard[3].rating
+            print(p1.name + " got: " + " %-22s %-20s %-13s" % (p1.playingCard[3].name, "Rating: " + str(p1.playingCard[3].rating), "Score: " + str(p1score)))
+            p2.playingCard.append(self.deck.pop(0))
+            p2score += p2.playingCard[3].rating
+            print(p2.name + " got: " + " %-22s %-20s %-13s" % (p2.playingCard[3].name, "Rating: " + str(p2.playingCard[3].rating), "Score: " + str(p2score)))
+            p1.playingCard.append(self.deck.pop(0))
+            p1score += p1.playingCard[4].rating
+            print(p1.name + " got: " + " %-22s %-20s %-13s" % (p1.playingCard[4].name, "Rating: " + str(p1.playingCard[4].rating), "Score: " + str(p1score)))
+            p2.playingCard.append(self.deck.pop(0))
+            p2score += p2.playingCard[4].rating
+            print(p2.name + " got: " + " %-22s %-20s %-13s" % (p2.playingCard[4].name, "Rating: " + str(p2.playingCard[4].rating), "Score: " + str(p2score)))
+
+            # if tie
+            if p1score == p2score:
+                p1.cardsWon.extend(p1.playingCard)
+                p1.nullPlayingCard()
+                p2.cardsWon.extend(p2.playingCard)
+                p2.nullPlayingCard()
+                print("It's a tie!")
+
+            # if p1 wins
+            elif p1score > p2score:
+                p1.cardsWon.extend(p1.playingCard)
+                p1.nullPlayingCard()
+                p1.cardsWon.extend(p2.playingCard)
+                p2.nullPlayingCard()
+                print(p1.name + " won!")
+            else:
+                p2.cardsWon.extend(p1.playingCard)
+                p1.nullPlayingCard()
+                p2.cardsWon.extend(p2.playingCard)
+                p2.nullPlayingCard()
+                print(p2.name + " won!")
+
+
+
+        # If not doubled down
+        else:
+            p1.playingCard.append(self.deck.pop(0))
+            p1score += p1.playingCard[1].rating
+            print(p1.name + " got: " + " %-22s %-20s %-13s" % (p1.playingCard[1].name, "Rating: " + str(p1.playingCard[1].rating), "Score: " + str(p1score)))
+            p2.playingCard.append(self.deck.pop(0))
+            p2score += p2.playingCard[1].rating
+            print(p2.name + " got: " + " %-22s %-20s %-13s" % (p2.playingCard[1].name, "Rating: " + str(p2.playingCard[1].rating), "Score: " + str(p2score)))
+            p1.playingCard.append(self.deck.pop(0))
+            p1score += p1.playingCard[2].rating
+            print(p1.name + " got: " + " %-22s %-20s %-13s" % (p1.playingCard[2].name, "Rating: " + str(p1.playingCard[2].rating), "Score: " + str(p1score)))
+            p2.playingCard.append(self.deck.pop(0))
+            p2score += p2.playingCard[2].rating
+            print(p2.name + " got: " + " %-22s %-20s %-13s" % (p2.playingCard[2].name, "Rating: " + str(p2.playingCard[2].rating), "Score: " + str(p2score)))
+            p1.playingCard.append(self.deck.pop(0))
+            p1score += p1.playingCard[3].rating
+            print(p1.name + " got: " + " %-22s %-20s %-13s" % (p1.playingCard[3].name, "Rating: " + str(p1.playingCard[3].rating), "Score: " + str(p1score)))
+            p2.playingCard.append(self.deck.pop(0))
+            p2score += p2.playingCard[3].rating
+            print(p2.name + " got: " + " %-22s %-20s %-13s" % (p2.playingCard[3].name, "Rating: " + str(p2.playingCard[3].rating), "Score: " + str(p2score)))
+
+            # if tie
+            if p1score == p2score:
+                p1.cardsWon.extend(p1.playingCard)
+                p1.nullPlayingCard()
+                p2.cardsWon.extend(p2.playingCard)
+                p2.nullPlayingCard()
+                print("It's a tie!")
+
+            # if p1 wins
+            elif p1score > p2score:
+                p1.cardsWon.extend(p1.playingCard)
+                p1.nullPlayingCard()
+                p1.cardsWon.extend(p2.playingCard)
+                p2.nullPlayingCard()
+                print(p1.name + " won!")
+            else:
+                p2.cardsWon.extend(p1.playingCard)
+                p1.nullPlayingCard()
+                p2.cardsWon.extend(p2.playingCard)
+                p2.nullPlayingCard()
+                print(p2.name + " won!")
 
     def rateCards(self, firstp, secondp, i1, i2):
         if firstp.playingCard[0].rating == secondp.playingCard[0].rating:
@@ -100,7 +190,7 @@ class Game:
                 if p.team == firstp.playingCard[0].team:
                     dodouble = True
             if dodouble:
-                doubleDown(firstp, secondp)
+                self.doubleDown(firstp, secondp)
             else:
                 secondp.cardsWon.append(firstp.playingCard[0])
                 firstp.nullPlayingCard()
@@ -113,6 +203,10 @@ class Game:
         x = "x"
         while x not in indices and x != "p":
             x = input("Enter [p] to pass: ")
+
+            if x != "p":
+                x = int(x)
+
             if x not in indices and x != "p":
                 print("Invalid input, try again")
 
@@ -123,20 +217,63 @@ class Game:
             p2.nullPlayingCard()
             print(p2.name + " won!")
         else: 
-            p1.setPlayingCard(p1.deck.pop(x))
+            x -= 1
+            p1.setPlayingCard(p1.deck[x])
             p1.setCard(x, self.deck.pop(0))
+            print(p1.name + " played: " + " %-22s %-20s %-13s %-15s" % (p1.playingCard[1].name, "Team: " + p1.playingCard[1].team, "Rating: " + str(p1.playingCard[1].rating), "Rarity: " + p1.playingCard[1].availability))
             dodouble = False
             for p in p2.deck:
                 if p.team == p2.playingCard[0].team:
                     dodouble = True
             if dodouble:
-                #Need to fix!
-                doubleDown(firstp, secondp)
+                indices = p2.printHand(p2.playingCard[0].team)
+                x = "x"
+                while x not in indices and x != "p":
+                    x = input("Enter [p] to pass: ")
+                    if x not in indices and x != "p":
+                        print("Invalid input, try again")
+
+                if x == "p":
+                    p1.cardsWon.append(p1.playingCard[0])
+                    p1.nullPlayingCard()
+                    p1.cardsWon.append(p2.playingCard[0])
+                    p2.nullPlayingCard()
+                    print(p1.name + " won!")
+                else: 
+                    p2.setPlayingCard(p2.deck[x])
+                    p2.setCard(x, self.deck.pop(0))
+                    print(p2.name + " played: " + " %-22s %-20s %-13s %-15s" % (p2.playingCard[1].name, "Team: " + p2.playingCard[1].team, "Rating: " + str(p2.playingCard[1].rating), "Rarity: " + p2.playingCard[1].availability))
+                    p1sum = p1.deck[0].rating + p1.deck[1].rating
+                    p2sum = p2.deck[0].rating + p2.deck[2].rating
+
+                    # if tie
+                    if p1sum == p2sum:
+                        self.penalties(p1, p2)
+                    elif p1sum > p2sum:
+                        p1.cardsWon.append(p1.playingCard[0])
+                        p1.cardsWon.append(p1.playingCard[1])
+                        p1.nullPlayingCard()
+                        p1.cardsWon.append(p2.playingCard[0])
+                        p1.cardsWon.append(p2.playingCard[1])
+                        p2.nullPlayingCard()
+                        print(p1.name + " won!")
+                    else:
+                        p2.cardsWon.append(p1.playingCard[0])
+                        p2.cardsWon.append(p1.playingCard[1])
+                        p1.nullPlayingCard()
+                        p2.cardsWon.append(p2.playingCard[0])
+                        p2.cardsWon.append(p2.playingCard[1])
+                        p2.nullPlayingCard()
+                        print(p2.name + " won!")
+
+                    
+
+
             else:
                 p1.cardsWon.append(p1.playingCard[0])
                 p1.cardsWon.append(p1.playingCard[1])
                 p1.nullPlayingCard()
-                p2.cardsWon.append(p2.playingCard[0])
+                p1.cardsWon.append(p2.playingCard[0])
                 p2.nullPlayingCard()
                 print(p1.name + " won!")
 
@@ -177,28 +314,32 @@ class Player:
     def nullPlayingCard(self):
         self.playingCard = []
 
-    def printHand(self):
-
-        print(self.name + "'s hand: ")
-        for i in range(len(self.deck)):
-            selector = i + 1
-            sentence = "[" + str(selector) + "] to play this player"
-            print(" %-20s %-20s %-13s %-15s" % (self.deck[i].name, "Team: " + self.deck[i].team, "Rating: " + str(self.deck[i].rating), "Rarity: " + self.deck[i].availability), sentence)
-    
     # two arguments for doubledown printhand
-    def printHand(self, team):
-        indices = []
-        print(self.name + "'s hand: ")
-        for i in range(len(self.deck)):
-            selector = i + 1
-            sentence = "[" + str(selector) + "] to play this player"
-            if self.deck[i].team == team:
-                indices.append(i)
-                print(" %-20s %-20s %-13s %-15s" % (self.deck[i].name, "Team: " + self.deck[i].team, "Rating: " + str(self.deck[i].rating), "Rarity: " + self.deck[i].availability), sentence)
-            else:
-                print(" %-20s %-20s %-13s %-15s" % (self.deck[i].name, "Team: " + self.deck[i].team, "Rating: " + str(self.deck[i].rating), "Rarity: " + self.deck[i].availability))
+    def printHand(self, team = None):
+        # if one argument
+        if team == None:
+            print(self.name + "'s hand: ")
+            for i in range(len(self.deck)):
+                selector = i + 1
+                sentence = "[" + str(selector) + "] to play this player"
+                print(" %-22s %-20s %-13s %-15s" % (self.deck[i].name, "Team: " + self.deck[i].team, "Rating: " + str(self.deck[i].rating), "Rarity: " + self.deck[i].availability), sentence)
+        else:
+            indices = []
+            print(self.name + "'s hand: ")
+            for i in range(len(self.deck)):
+                selector = i + 1
+                sentence = "[" + str(selector) + "] to play this player"
+                if self.deck[i].team == team:
+                    indices.append(selector)
+                    print(" %-22s %-20s %-13s %-15s" % (self.deck[i].name, "Team: " + self.deck[i].team, "Rating: " + str(self.deck[i].rating), "Rarity: " + self.deck[i].availability), sentence)
+                else:
+                    print(" %-22s %-20s %-13s %-15s" % (self.deck[i].name, "Team: " + self.deck[i].team, "Rating: " + str(self.deck[i].rating), "Rarity: " + self.deck[i].availability))
 
-        return indices
+            return indices
+
+        
+    
+    
 
 
 
@@ -220,14 +361,16 @@ def runGame():
         p2.drawCard(game.deck, 0)
 
     while(game.over == False):
+        print("Time: " + str(game.time) + ":00")
+        print(p1.name + "'s cards won: " + str(len(p1.cardsWon)) + "\t" + p2.name + "'s cards won: " + str(len(p2.cardsWon)))
 
         game.takeTurn(p1, p2)
+        game.p1turn = not game.p1turn
+        game.time += 5
+        if (game.time == 90):
+            game.over = True
 
-
-        #print(len(deck))
-        game.over = True
-
-
+    print("Game Over!")
 
 runGame()
 
