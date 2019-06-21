@@ -277,6 +277,35 @@ class Game:
                 p2.nullPlayingCard()
                 print(p1.name + " won!")
 
+    def calculateScore(self, p1, p2):
+        p1.cardsWon.sort(key=lambda x: x.rating, reverse=True)
+        p2.cardsWon.sort(key=lambda x: x.rating, reverse=True)
+        p1score = 0
+        p2score = 0
+
+        # Print top 11 players
+        print(p1.name + "'s top 11 players are: ")
+        for i in range(11):
+            if i < len(p1.cardsWon):
+                p1score += p1.cardsWon[i].rating
+                print(" %-22s %-20s %-13s" % (p1.cardsWon[i].name, "Rating: " + str(p1.cardsWon[i].rating), "Total Score: " + str(p1score)))
+            else: 
+                break
+
+        print(p2.name + "'s top 11 players are: ")
+        for i in range(11):
+            if i < len(p2.cardsWon):
+                p2score += p2.cardsWon[i].rating
+                print(" %-22s %-20s %-13s" % (p2.cardsWon[i].name, "Rating: " + str(p2.cardsWon[i].rating), "Total Score: " + str(p2score)))
+            else: 
+                break
+
+        if p1score == p2score:
+            print("It's a tie!")
+        elif p1score > p2score:
+            print(p1.name + " wins!")
+        else:
+            print(p2.name + " wins!")
 
 
 
@@ -371,6 +400,10 @@ def runGame():
             game.over = True
 
     print("Game Over!")
+    game.calculateScore(p1, p2)
+
+    
+
 
 runGame()
 
