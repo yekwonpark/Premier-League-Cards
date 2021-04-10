@@ -55,7 +55,6 @@ Kepa, Chelsea, 84, 15/18
 V. Moses, Chelsea, 78, 16/18
 C. Hudson-Odoi, Chelsea, 68, 17/18
 R. Loftus-Cheek, Chelsea, 77, 18/18
-
 H. Kane, Tottenham, 90, 1/17
 F. Llorente, Tottenham, 77, 2/17
 C. Eriksen, Tottenham, 88, 3/17
